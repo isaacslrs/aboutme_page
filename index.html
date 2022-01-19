@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Soy Isaac Salirrosas</title>
+</head>
+<body>
+    <header>
+        <section class="nav-section">
+        <h1 class="logotype" onclick="location.href='/';">Isaac Salirrosas</h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-list__item"><a href="/">Inicio</a></li>
+                <li class="nav-list__item"><a href="#aboutme">Conóceme</a></li>
+                <li class="nav-list__item"><a href="#askme">Pregúntame</a></li>
+            </ul>
+        </nav>
+        </section>
+        <section class="hero-section">
+            <figure class="img-container">
+                <img class="profile-pic" src="./assets/img/profile.jpg" alt="Profile Photo">
+            </figure>
+            <div class="down-arrow-icon" onclick="location.href='#aboutme';"></div>
+        </section>
+    </header>
+    <main>
+        <section class="aboutme-section" id="aboutme">
+            <img class="aboutme-image" src="./assets/img/profile.jpg" alt="Profile Photo">
+            <div class="aboutme-text">
+                <h2>Conóceme</h2>
+                <p>¡Qué onda! Permíteme presentarme. Mi nombre es Isaac Salirrosas. Soy de Trujillo, Perú y tengo 21 años. 👋</p>
+                <p>Algo interesante sobre mí es que considero que tengo una fuerte conexión con la tecnología y el desarrollo de software. ¡Me encanta! Descubrí la programación a la edad de 14 años y desde entonces he estado buscando formas de mejorar mis conocimientos y habilidades de programación. A los 14 años desarrollé un juego para móviles y otro a los 15. 🎮👾🔥</p>
+                <p>Dos datos curiosos sobre mí son que estoy chiquito jaja, mido 150cm, y cuando tenía 17 años me operaron del corazón. 🤯</p>
+                <p>Me encantan los videojuegos y soy un gran fan de la saga de Uncharted. Me gusta cantar y tocar la guitarra. Y ver series y películas también. Y no tiene que faltar que soy un apasionado por el aprendizaje constate y desde hace varios años soy un autodidacta. 🎮💻🍿</p>
+                <p>Gracias por conocerme un poquito más y por visitar mi página web. ❤</p>
+            </div>
+        </section>
+        <section class="askme-section" id="askme">
+            <h2>Pregúntame</h2>
+            <form class="question-form">
+                <label class="question-label" for="question">¿Qué quieres saber?</label>
+                <input class="question-input" type="text" name="question" id="question">
+                <input class="question-button" type="submit" value="Preguntar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-section">
+            <a href="https://www.instagram.com/isaac_slrs/"><img src="./assets/icons/instagram-brands.svg" alt="Instagram"></a>
+            <a href="https://twitter.com/isaac_slrs"><img src="./assets/icons/twitter-brands.svg" alt="Twitter"></a>
+            <a href="https://github.com/isaacslrs"><img src="./assets/icons/github-brands.svg" alt="GitHub"></a>
+        </div>
+        <p class="copyright">©Copyright</p>
+    </footer>
+</body>
+</html>

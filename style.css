@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-font: 'Lato', sans-serif;
+    --logo-font: 'Pacifico', cursive;
+    --primary-color: #347aeb;
+    --hover-color: #f0eee6;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+.logotype {
+    font-family: var(--logo-font);
+    font-size: 28px;
+    margin-left: 20px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+header, .nav-section {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+    width: 300px;
+    height: 100%;
+    display: flex;
+}
+
+.nav-list__item {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0 20px;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+.nav-list__item a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-list__item:hover, .nav-list__item a:hover {
+    background-color: var(--hover-color);
+    color: var(--primary-color)
+}
+
+.hero-section {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.img-container {
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 400px;
+    height: calc(width / 2);
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    margin-bottom: 50px;
+}
+
+.down-arrow-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/icons/arrow-circle-down-solid.svg);
+    background-position: center;
+    background-size: cover;
+    animation: MoveUpDown 1s linear infinite;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+}
+
+.aboutme-section {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-image {
+    width: 300px;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    margin-right: 20px;
+}
+
+.aboutme-text h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.aboutme-text p {
+    margin-bottom: 5px;
+}
+
+.askme-section {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.askme-section h2, .question-label, .question-input, .question-button {
+    margin-bottom: 30px;
+}
+
+.askme-section h2 {
+    font-size: 28px;
+}
+
+.question-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.question-label {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.question-input {
+    max-width: 600px;
+    height: 30px;
+    font-size: 16px;
+    margin: 0 20px 25px 25px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.question-button {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.question-button:hover {
+    background-color: #3496eb;
+}
+
+footer {
+    width: 100%
+}
+
+.social-section {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.social-section img {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+}
+
+.copyright {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: var(--hover-color);
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .aboutme-section {
+        flex-direction: column;
+    }
+
+    .aboutme-image {
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .nav-section {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-list {
+        margin: 0 auto;
+    }
+
+    .logotype {
+        text-align: center;
+        margin: 0;
+    }
+
+    .profile-pic {
+        width: 250px;
+    }
+
+    .down-arrow-icon {
+        top: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .question-input {
+        padding: 0 10px;
+    }
+}
